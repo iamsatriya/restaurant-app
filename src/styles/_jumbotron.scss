@@ -1,0 +1,26 @@
+.jumbotron {
+  min-height: 80vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: 
+    linear-gradient(
+      to right bottom, 
+      rgba($black-light-1, 0.9), 
+      rgba($black-light-2, 0.9)),
+    url('../public/images/heros/hero-image_2.jpg');
+    background-position: center;
+  &__title {
+    font-size: 3rem;
+    color: $black;
+    font-weight: 400;
+    color: $white;
+    @include respond(tab-por) {
+      font-size: 5rem;
+    }
+  }
+}
+.yellow {
+  color: $yellow;
+}

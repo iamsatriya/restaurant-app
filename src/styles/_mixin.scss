@@ -1,0 +1,14 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == tab-por {
+    @media (min-width: 37.5em) {@content};
+  }
+  @if $breakpoint == tab-land {
+    @media (min-width: 56.25em) {@content};
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 75em) {@content};
+  }
+  @if $breakpoint == big-desk {
+    @media (min-width: 112.5em) {@content};
+  }
+}

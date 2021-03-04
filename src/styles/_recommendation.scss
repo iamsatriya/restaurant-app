@@ -1,0 +1,81 @@
+/*
+TODO: update style to ellipsis when overflow, failure, need to monitor using devTools
+*/
+
+.recommendation {
+  font-size: 2rem;
+  text-align: justify;
+  padding: 0 2rem;
+  margin-top: 10rem;
+  &__container {
+    //margin: 3rem 2rem;
+    position: relative;
+    
+  }
+  &__item {
+    //background-image: url('../public/images/cupcakes.jpg'); // TESTING REMOVE THIS LATER
+    width: 100%;
+    height: 40rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    //margin: 8rem 2rem;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: -2rem;
+      left: 1rem;
+      border: 3px solid $yellow;
+      z-index: -1;
+    }
+  }
+  &__text-container {
+    background-color: rgba($yellow, 0.85);
+    padding: 2rem 2rem 4.5rem 2rem;
+    color: $black;
+    //white-space: nowrap;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
+  }
+  &__city {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__desc {
+    font-size: 1.6rem;
+    //max-height: 10rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__rating {
+    position: absolute;
+    right: -1.5rem;
+    bottom: -1.5rem;
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: $black;
+    color: $yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+restaurant-list {
+  @include respond(tab-por) {
+    //display: grid;
+    //grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Satriya Wicaksana">
+  <meta name="description" content="Foodhub is a website that was built to be your dining companion. find all your favorite places to eat in one place. write down what you think about the restaurant you visit, let the world know it">
+  <title>Foodhub</title>
+</head>
+<body>
+  <!-- <a href="#main-content">Skip to content</a> -->
+  <header class="header">
+    <div class="header__logo">Foodhub</div>
+    <button class="header__menu">	&#9776;</button>
+    <nav class="header__nav">
+      <ul class="header__ul">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Favorite</a></li>
+        <li><a href="https://www.github.com/iamsatriya">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article class="jumbotron">
+    <h1 class="jumbotron__title">
+      Hungry<span class="yellow">?</span><br>you<span class="yellow">'</span>re in the right place<span class="yellow">.</span>
+    </h1>
+  </article>
+  <main>
+    <section class="introduction">
+      <div class="introduction__container">
+        <div class="introduction__left">
+          <h2 class="heading__primary">Eating well should<br>be simple.</h2>
+          <p>All recommendation restaurant can be found in single click. Eating a healthy diet is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love. Rather, it’s about feeling great, having more energy, improving your health, and boosting your mood.</p>
+        </div>
+        <div class="introduction__right">
+          <img src="/images/cupcakes.jpg" alt="Tasty Food">
+        </div>
+      </div>
+      <div class="introduction__container">
+        <div class="introduction__right">
+          <img src="/images/drink.jpg" alt="Tasty Food">
+        </div>
+        <div class="introduction__left">
+          <h2 class="heading__primary">Drink tasty should<br>be easy.</h2>
+          <p> Stay hydrated and choose calorie-free beverages to avoid added sugars. In addition to drinking water, choosing low-fat or fat-free milk, fortified soy beverages, or unsweetened beverages such as 100% fruit or vegetable juice can help meet fluid needs to avoid dehydration while also meeting other food group recommendations, according to the USDA and HHS.</p>
+        </div>
+      </div>
+    </section>
+    <section class="recommendation">
+      <h2 class="heading__primary">Our recommendation</h2>
+      <p>All of our favorite restaurant can be found here. All the restaurant list in the single place, and single click. please feel free to leave your review to our restaurant list</p>
+      <div class="recommendation__container">
+        <!-- <div class="recommendation__item ${this._restaurant.id}">
+          <div class="recommendation__text-container">
+            <p class="recommendation__city">${thifdsafsdfafafs._restaurant.name}</p>
+            <p class="recommendation__desc">
+            Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, deserunt? ipsum dolor sit amet consectetur adipisicing elit. Distinctio iure autem atque! Nihil illo beatae error consequatur deserunt, quos eveniet.
+            </p>
+          </div>
+          <p class="recommendation__rating">
+            4.0
+          </p>
+        </div> -->
+        <restaurant-list></restaurant-list>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

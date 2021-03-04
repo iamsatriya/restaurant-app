@@ -1,0 +1,30 @@
+.introduction {
+  font-size: 2rem;
+  text-align: justify;
+  padding: 0 2rem;
+  margin-top: 10rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    &:not(:first-child){
+      flex-direction: column-reverse;
+      @include respond(tab-por) {
+        flex-direction: row;
+      }
+    }
+    @include respond(tab-por) {
+      flex-direction: row;
+    }
+  }
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & img {
+    width: 90%;
+  }
+  & p {
+    margin: 2rem 0;
+  }
+}
