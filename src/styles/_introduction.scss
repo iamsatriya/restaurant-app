@@ -8,11 +8,11 @@
     flex-direction: column;
     &:not(:first-child){
       flex-direction: column-reverse;
-      @include respond(tab-por) {
+      @include respond(tab-land) {
         flex-direction: row;
       }
     }
-    @include respond(tab-por) {
+    @include respond(tab-land) {
       flex-direction: row;
     }
   }
@@ -20,9 +20,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond(big-desk){
+      align-items: flex-start;
+    }
   }
   & img {
     width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    @include respond(desktop){
+      height: 45rem;
+    }
   }
   & p {
     margin: 2rem 0;
