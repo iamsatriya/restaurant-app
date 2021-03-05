@@ -3,7 +3,10 @@
   position: relative;
   font-size: 2.5rem;
   margin: 2rem 0;
-  @include respond(tab-por) {
+  /* @include respond(tab-por) {
+    font-size: 3rem;
+  } */
+  @include respond(desktop){
     font-size: 3rem;
   }
   &::before {
@@ -15,5 +18,8 @@
     height: 100%;
     background-color: $yellow;
     z-index: -1;
+    @include respond(desktop){
+      width: 80%;
+    }
   }
 }
