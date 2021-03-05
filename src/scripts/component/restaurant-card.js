@@ -5,12 +5,8 @@ class RestaurantCard extends HTMLElement {
   }
   render() {
     this.innerHTML = `
-    <style>
-    .${this._restaurant.id} {
-      background-image: url(${this._restaurant.pictureId});
-    }
-    </style>
-    <div class="recommendation__item ${this._restaurant.id}">
+    <div class="recommendation__item ${this._restaurant.id}" 
+    style="background-image: url(${this._restaurant.pictureId});">
       <div class="recommendation__text-container">
         <p class="recommendation__city">${this._restaurant.name}</p>
         <p class="recommendation__desc">
