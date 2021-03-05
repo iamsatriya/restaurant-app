@@ -11,12 +11,13 @@
       rgba($black-light-2, 0.9)),
     url('../public/images/heros/hero-image_2.jpg');
     background-position: center;
+    background-size: cover;
   &__title {
     font-size: 3rem;
     color: $black;
     font-weight: 400;
     color: $white;
-    @include respond(tab-por) {
+    @include respond(desktop) {
       font-size: 5rem;
     }
   }
