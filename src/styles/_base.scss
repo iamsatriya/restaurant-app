@@ -12,6 +12,12 @@ Reset Style
 }
 html {
   font-size: 62.5%;
+  @include respond(tab-por) {
+    font-size: 100%;
+  }
+  @include respond(desktop) {
+    font-size: 65%;
+  }
 }
 body {
   box-sizing: border-box;
