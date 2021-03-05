@@ -10,17 +10,17 @@ Header Style
   position: relative;
   overflow-x: hidden;
   font-size: 2rem;
-  @include respond(tab-por) {
+  /* @include respond(tab-por) {
     font-size: 2.5rem;
-  }
+  } */
   &__logo {
     font-size: 2.5rem;
     padding: 1rem;
     font-weight: 600;
     position: relative;
-    @include respond(tab-por) {
+    /* @include respond(tab-por) {
       font-size: 3.5rem;
-    }
+    } */
     &::before {
       content: '';
       position: absolute;
@@ -59,12 +59,13 @@ Header Style
       justify-content: flex-end;
       padding-right: 1rem;
     }
-    & li {
-      padding: 1rem;
-    }
     & a:link, a:visited {
       text-decoration: none;
       color: $black;
+      padding: 1rem;
+    }
+    & a:hover {
+      color: $yellow;
     }
   }
 }
