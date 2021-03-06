@@ -8,7 +8,7 @@ Header Style
   justify-content: space-between;
   align-items: center;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   font-size: 2rem;
   /* @include respond(tab-por) {
     font-size: 2.5rem;
