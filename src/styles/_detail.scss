@@ -1,0 +1,129 @@
+
+.detail {
+  position: relative;
+  margin-bottom: -5rem;
+  &__container {
+    min-height: 100vh; // testing
+    position: relative;
+    top: -5rem;
+    background-color: $white;
+    padding: 2rem 2.5rem;
+    border-top-left-radius: 4rem;
+    font-size: 1.8rem;
+  }
+  &__fav {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $black;
+    position: absolute;
+    right: 1.5rem;
+    top: -2.5rem;
+    display: grid;
+    place-items: center;
+  }
+  &__bookmark {
+    width: 3rem;
+    height: 3rem;
+    background-image: url('../public/images/icon/bookmark_border-24px.svg');
+    background-size: cover;
+    background-position: center;
+    filter: invert(100%) sepia(84%) saturate(4761%) hue-rotate(327deg) brightness(117%) contrast(102%);
+  }
+  &__photo {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  &__categories-item {
+    padding: 1rem;
+    margin-right: 1rem;
+    background-color: $yellow;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    display: inline-block;
+    text-align: center;
+    width: 9rem;
+  }
+  &__address {
+    &-container {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  }
+  &__rating {
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+    &-value {
+      font-weight: 600;
+    }
+  }
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+    background-position: center;
+    filter: invert(15%) sepia(0%) saturate(0%) hue-rotate(54deg) brightness(90%) contrast(102%);
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    &-loc {
+      background-image: url('../public/images/icon/location-24px.svg');
+    }
+    &-rating {
+      background-image: url('../public/images/icon/star-24px.svg');
+    }
+  }
+  &__menu-wrapper {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 .5rem 2rem rgba($black, .15);
+  }
+  &__menu-title {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  &__menu-item {
+    font-size: 2rem;
+    list-style: none;
+    text-transform: capitalize;
+  }
+  /* &__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+  } */
+  &__review {
+    border-top: 2px solid rgba($black, .15);
+    padding-top: 2rem;
+  }
+  &__review-item {
+    margin: 2rem 0;
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 2rem rgba($black, .15);
+    padding: 1rem;
+  }
+  &__review-comment{
+    font-style: italic;
+  }
+  &__review-user {
+    margin-top: 2rem;
+    font-weight: 600;
+    text-align: right;
+  }
+  &__review-date {
+    line-height: .8;
+    font-size: 1.4rem;
+    text-align: right;
+  }
+} 
+.bold {
+  font-weight: 600;
+}
