@@ -1,3 +1,4 @@
+import CONFIG from '../globals/config';
 class RestaurantCard extends HTMLElement {
   set restaurant(restaurant) {
     this._restaurant = restaurant;
@@ -5,8 +6,11 @@ class RestaurantCard extends HTMLElement {
   }
   render() {
     this.innerHTML = `
-    <div class="recommendation__item ${this._restaurant.id}" 
-    style="background-image: url(${this._restaurant.pictureId});">
+    <a href="/#/detail/${this._restaurant.id}"
+    class="recommendation__item" 
+    style="
+    background-image: 
+    url(${CONFIG.BASE_IMAGE_URL}/medium/${this._restaurant.pictureId});">
       <div class="recommendation__text-container">
         <p class="recommendation__city">${this._restaurant.name}</p>
         <p class="recommendation__desc">
@@ -16,7 +20,7 @@ class RestaurantCard extends HTMLElement {
       <p class="recommendation__rating">
         ${this._restaurant.rating.toFixed(1)}
       </p>
-    </div>
+    </a>
     `;
   }
 }
