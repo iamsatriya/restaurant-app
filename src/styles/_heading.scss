@@ -1,25 +1,31 @@
-.heading__primary {
-  text-transform: uppercase;
-  position: relative;
-  font-size: 2.5rem;
-  margin: 2rem 0;
-  /* @include respond(tab-por) {
-    font-size: 3rem;
-  } */
-  @include respond(desktop){
-    font-size: 3rem;
-  }
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-color: $yellow;
-    z-index: -1;
+.heading {
+  &__primary {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    /* @include respond(tab-por) {
+      font-size: 3rem;
+    } */
     @include respond(desktop){
-      width: 80%;
+      font-size: 3rem;
     }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-color: $yellow;
+      z-index: -1;
+      @include respond(desktop){
+        width: 80%;
+      }
+    }
+  }
+  &__secondary {
+    text-transform: capitalize;
+    font-size: 3rem;
   }
 }
