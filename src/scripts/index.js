@@ -1,24 +1,19 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.scss';
-import data from '../DATA.json';
 import '../scripts/component/restaurant-list.js';
+import App from './views/app';
 
-const restaurantList = document.querySelector('restaurant-list');
-const hamburgerMenu = document.querySelector('#hamburger-menu');
-const headerNav = document.querySelector('#header__nav');
-const closeNav = document.querySelector('#close-menu');
 
-hamburgerMenu.addEventListener('click', function() {
-  headerNav.classList.toggle('active');
+const app = new App({
+  button: document.querySelector('#hamburger-menu'),
+  drawer: document.querySelector('#header__nav'),
+  content: document.querySelector('#main-content'),
+  closebtn: document.querySelector('#close-menu'),
+  restaurantList: document.querySelector('restaurant-list'),
 });
-closeNav.addEventListener('click', function() {
-  headerNav.classList.toggle('active');
+window.addEventListener('hashchange', () => {
+  app.renderPage();
 });
-
-const loadRestaurant = () => {
-  restaurantList.restaurants = data.restaurants;
-};
-
-document.addEventListener('DOMContentLoaded', function() {
-  loadRestaurant();
+window.addEventListener('load', () => {
+  app.renderPage();
 });
