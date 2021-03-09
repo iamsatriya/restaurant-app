@@ -9,7 +9,7 @@ const app = new App({
   drawer: document.querySelector('#header__nav'),
   content: document.querySelector('#main-content'),
   closebtn: document.querySelector('#close-menu'),
-  restaurantList: document.querySelector('restaurant-list'),
+  navLink: document.querySelectorAll('#header__nav a'),
 });
 window.addEventListener('hashchange', () => {
   app.renderPage();
