@@ -1,38 +1,24 @@
-/*
-TODO: update style to ellipsis when overflow, failure, need to monitor using devTools
-*/
-
 .recommendation {
   font-size: 2rem;
   text-align: justify;
   padding: 0 2rem;
   margin-top: 10rem;
   &__container {
-    //margin: 3rem 2rem;
     position: relative;
     
   }
   &__item {
-    //background-image: url('../public/images/cupcakes.jpg'); // TESTING REMOVE THIS LATER
-    //width: 100%;
+    display: block;
+    text-decoration: none;
     height: 40rem;
-    //margin-top: 4rem;
-    //margin-bottom: 4rem;
-    //margin: 8rem 2rem;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    @include respond(tab-land) {
-     
-    }
     @include respond(desktop) {
       height: 30rem;
-    }
-    @include respond(big-desk) {
-      
     }
     &::before {
       content: '';
@@ -50,9 +36,6 @@ TODO: update style to ellipsis when overflow, failure, need to monitor using dev
     background-color: rgba($yellow, 0.85);
     padding: 2rem 2rem 4.5rem 2rem;
     color: $black;
-    //white-space: nowrap;
-    //overflow: hidden;
-    //text-overflow: ellipsis;
   }
   &__city {
     font-size: 2.5rem;
@@ -62,7 +45,6 @@ TODO: update style to ellipsis when overflow, failure, need to monitor using dev
   }
   &__desc {
     font-size: 1.6rem;
-    //max-height: 10rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
